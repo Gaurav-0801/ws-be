@@ -1,0 +1,27 @@
+{
+  "name": "websocket-drawing-server",
+  "version": "1.0.0",
+  "description": "WebSocket server for collaborative drawing application",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "jsonwebtoken": "^9.0.2",
+    "@prisma/client": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.8",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "prisma": "^5.6.0"
+  }
+}
