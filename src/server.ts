@@ -1,8 +1,8 @@
 import { type WebSocket, WebSocketServer } from "ws"
 import jwt from "jsonwebtoken"
-import { JWT_SECRET } from "@repo/backend-common/config"
-import { prismaClient } from "@repo/db/client"
-import type { WebSocketMessage } from "@repo/common/types"
+import { JWT_SECRET } from "./config"
+import { prismaClient } from "./database"
+import type { WebSocketMessage } from "./types"
 
 const wss = new WebSocketServer({ port: 8080 })
 
